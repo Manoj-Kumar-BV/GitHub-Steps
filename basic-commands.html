@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basic GitHub Commands</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 20px;
+        }
+        h1, h2 {
+            color: #333;
+        }
+        nav a {
+            margin-right: 15px;
+        }
+        code {
+            background-color: #f4f4f4;
+            border: 1px solid #ddd;
+            padding: 2px 4px;
+            border-radius: 4px;
+        }
+        pre {
+            background-color: #f4f4f4;
+            border: 1px solid #ddd;
+            padding: 10px;
+            border-radius: 4px;
+            overflow-x: auto;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Basic GitHub Commands</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="creating-repository.html">Creating GitHub Repository</a>
+            <a href="creating-branches.html">Creating Branches</a>
+            <!-- Add more links here as needed -->
+        </nav>
+    </header>
+
+    <main>
+        <section id="basic-commands">
+            <h2>Basic GitHub Commands</h2>
+            <p>Here are some of the most commonly used GitHub commands:</p>
+            <ol>
+                <li>**Clone a Repository**:
+                    <ul>
+                        <li>This command is used to clone a repository to your local machine.</li>
+                    </ul>
+                    <pre><code>git clone https://github.com/YourUsername/YourRepository.git
+cd YourRepository</code></pre>
+                </li>
+                <li>**Check the Status of Your Repository**:
+                    <ul>
+                        <li>This command is used to check the status of your files in the working directory and staging area.</li>
+                    </ul>
+                    <pre><code>git status</code></pre>
+                </li>
+                <li>**Stage Changes**:
+                    <ul>
+                        <li>This command is used to stage changes for the next commit.</li>
+                    </ul>
+                    <pre><code>git add .</code></pre>
+                </li>
+                <li>**Commit Changes**:
+                    <ul>
+                        <li>This command is used to commit staged changes with a message.</li>
+                    </ul>
+                    <pre><code>git commit -m "Description of changes"</code></pre>
+                </li>
+                <li>**Push Changes to Remote Repository**:
+                    <ul>
+                        <li>This command is used to push commits from your local repository to the remote repository.</li>
+                    </ul>
+                    <pre><code>git push origin main  # or 'master' if your branch is named 'master'</code></pre>
+                </li>
+                <li>**Pull Latest Changes from Remote Repository**:
+                    <ul>
+                        <li>This command is used to pull the latest changes from the remote repository to your local repository.</li>
+                    </ul>
+                    <pre><code>git pull origin main  # or 'master' if your branch is named 'master'</code></pre>
+                </li>
+                <li>**Create a New Branch**:
+                    <ul>
+                        <li>This command is used to create a new branch.</li>
+                    </ul>
+                    <pre><code>git checkout -b feature-name</code></pre>
+                </li>
+                <li>**Merge a Branch**:
+                    <ul>
+                        <li>This command is used to merge a branch into your current branch.</li>
+                    </ul>
+                    <pre><code>git merge feature-name</code></pre>
+                </li>
+                <li>**Delete a Branch**:
+                    <ul>
+                        <li>This command is used to delete a branch.</li>
+                    </ul>
+                    <pre><code>git branch -d feature-name</code></pre>
+                </li>
+            </ol>
+        </section>
+
+        <section id="next-steps">
+            <h2>Next Steps</h2>
+            <p>After learning these basic commands, you can:</p>
+            <ul>
+                <li><a href="creating-repository.html">Create repositories</a> to manage different projects.</li>
+                <li><a href="creating-branches.html">Create branches</a> to manage different features or versions of your project.</li>
+                <li>Start committing code to your repositories.</li>
+                <li>Collaborate with others by inviting them to your repository.</li>
+            </ul>
+        </section>
+    </main>
+</body>
+</html>
