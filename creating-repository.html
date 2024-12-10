@@ -59,6 +59,38 @@
             </ol>
         </section>
 
+        <section id="commands">
+            <h2>Commands for Repository and Feature Branch</h2>
+            <p>Use the following commands to work with your repository and create new features:</p>
+            <pre><code>
+# Clone the Repository
+git clone https://github.com/YourUsername/YourRepository.git
+cd YourRepository
+
+# Create a New Feature Branch
+git checkout -b feature-name
+
+# Make Changes and Commit
+git add .
+git commit -m "Description of changes"
+
+# Switch to Main/Master Branch
+git checkout main  # or 'master' if your branch is named 'master'
+
+# Pull Latest Changes from Remote Main/Master
+git pull origin main  # or 'master' if your branch is named 'master'
+
+# Merge Feature Branch into Main/Master
+git merge feature-name
+
+# Push Updated Main/Master Branch to Remote
+git push origin main  # or 'master' if your branch is named 'master'
+
+# Delete the Feature Branch (optional)
+git branch -d feature-name
+            </code></pre>
+        </section>
+
         <section id="next-steps">
             <h2>Next Steps</h2>
             <p>After creating your repository, you can:</p>
