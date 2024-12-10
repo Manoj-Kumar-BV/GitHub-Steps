@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Creating Branches</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 20px;
+        }
+        h1, h2 {
+            color: #333;
+        }
+        nav a {
+            margin-right: 15px;
+        }
+        code {
+            background-color: #f4f4f4;
+            border: 1px solid #ddd;
+            padding: 2px 4px;
+            border-radius: 4px;
+        }
+        pre {
+            background-color: #f4f4f4;
+            border: 1px solid #ddd;
+            padding: 10px;
+            border-radius: 4px;
+            overflow-x: auto;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Creating Branches</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="creating-repository.html">Creating GitHub Repository</a>
+            <!-- Add more links here as needed -->
+        </nav>
+    </header>
+
+    <main>
+        <section id="creating-branches">
+            <h2>Creating a New Branch</h2>
+            <p>Follow these steps to create a new branch on GitHub:</p>
+            <ol>
+                <li>**Create a New Repository**:
+                    <ul>
+                        <li>When you create a new repository on GitHub, it will start with the `main` or `master` branch (depending on your settings).</li>
+                    </ul>
+                </li>
+                <li>**Clone the Repository to Your Local Machine**:
+                    <pre><code>git clone https://github.com/YourUsername/YourRepository.git
+cd YourRepository</code></pre>
+                </li>
+                <li>**Create a New Feature Branch**:
+                    <pre><code>git checkout -b feature-name</code></pre>
+                </li>
+                <li>**Make Changes and Commit**:
+                    <pre><code>git add .
+git commit -m "Description of changes"</code></pre>
+                </li>
+                <li>**Switch to Main/Master Branch**:
+                    <pre><code>git checkout main  # or 'master' if your branch is named 'master'</code></pre>
+                </li>
+                <li>**Pull Latest Changes from Remote Main/Master**:
+                    <pre><code>git pull origin main  # or 'master' if your branch is named 'master'</code></pre>
+                </li>
+                <li>**Merge Feature Branch into Main/Master**:
+                    <pre><code>git merge feature-name</code></pre>
+                </li>
+                <li>**Push Updated Main/Master Branch to Remote**:
+                    <pre><code>git push origin main  # or 'master' if your branch is named 'master'</code></pre>
+                </li>
+                <li>**Delete the Feature Branch (optional)**:
+                    <pre><code>git branch -d feature-name</code></pre>
+                </li>
+            </ol>
+        </section>
+
+        <section id="next-steps">
+            <h2>Next Steps</h2>
+            <p>After creating your branch, you can:</p>
+            <ul>
+                <li><a href="creating-repository.html">Create repositories</a> to manage different projects.</li>
+                <li>Start committing code to your branches.</li>
+                <li>Collaborate with others by inviting them to your repository.</li>
+            </ul>
+        </section>
+    </main>
+</body>
+</html>
