@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Git Branch Management Guide</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 20px;
+        }
+        h1 {
+            color: #333;
+        }
+        code {
+            background-color: #f4f4f4;
+            border: 1px solid #ddd;
+            padding: 2px 4px;
+            border-radius: 4px;
+        }
+        pre {
+            background-color: #f4f4f4;
+            border: 1px solid #ddd;
+            padding: 10px;
+            border-radius: 4px;
+            overflow-x: auto;
+        }
+    </style>
+</head>
+<body>
+    <h1>Git Branch Management Guide</h1>
+    <p>Follow these steps to manage branches in Git and ensure smooth collaboration:</p>
+
+    <h2>1. Create a New Repository</h2>
+    <p>When you create a new repository on GitHub, it will start with the <code>main</code> or <code>master</code> branch (depending on your settings).</p>
+
+    <h2>2. Clone the Repository to Your Local Machine</h2>
+    <pre><code>git clone https://github.com/YourUsername/YourRepository.git
+cd YourRepository</code></pre>
+
+    <h2>3. Create a New Feature Branch</h2>
+    <pre><code>git checkout -b feature-name</code></pre>
+
+    <h2>4. Make Changes and Commit</h2>
+    <pre><code>git add .
+git commit -m "Description of changes"</code></pre>
+
+    <h2>5. Switch to Main/Master Branch</h2>
+    <pre><code>git checkout main  # or 'master' if your branch is named 'master'</code></pre>
+
+    <h2>6. Pull Latest Changes from Remote Main/Master</h2>
+    <pre><code>git pull origin main  # or 'master' if your branch is named 'master'</code></pre>
+
+    <h2>7. Merge Feature Branch into Main/Master</h2>
+    <pre><code>git merge feature-name</code></pre>
+
+    <h2>8. Push Updated Main/Master Branch to Remote</h2>
+    <pre><code>git push origin main  # or 'master' if your branch is named 'master'</code></pre>
+
+    <h2>9. Delete the Feature Branch (optional)</h2>
+    <pre><code>git branch -d feature-name</code></pre>
+</body>
+</html>
