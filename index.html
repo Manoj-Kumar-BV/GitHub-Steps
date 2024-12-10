@@ -3,15 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Git Branch Management Guide</title>
+    <title>GitHub Guide for Beginners</title>
     <style>
         body {
             font-family: Arial, sans-serif;
             line-height: 1.6;
             margin: 20px;
         }
-        h1 {
+        h1, h2 {
             color: #333;
+        }
+        nav a {
+            margin-right: 15px;
         }
         code {
             background-color: #f4f4f4;
@@ -29,36 +32,27 @@
     </style>
 </head>
 <body>
-    <h1>Git Branch Management Guide</h1>
-    <p>Follow these steps to manage branches in Git and ensure smooth collaboration:</p>
+    <header>
+        <h1>GitHub Guide for Beginners</h1>
+        <nav>
+            <a href="creating-repository.html">Creating GitHub Repository</a>
+            <a href="creating-branches.html">Creating Branches</a>
+            <a href="basic-commands.html">Basic GitHub Commands</a>
+            <a href="collaborating.html">Collaborating on GitHub</a>
+            <!-- Add more links here as needed -->
+        </nav>
+    </header>
 
-    <h2>1. Create a New Repository</h2>
-    <p>When you create a new repository on GitHub, it will start with the <code>main</code> or <code>master</code> branch (depending on your settings).</p>
+    <main>
+        <section id="introduction">
+            <h2>Introduction to GitHub</h2>
+            <p>GitHub is a web-based platform used for version control and collaboration. It allows you to manage your code repositories and collaborate with others on projects. Whether you're working on a small project or a large-scale application, GitHub provides the tools and features you need to effectively manage your codebase.</p>
+        </section>
 
-    <h2>2. Clone the Repository to Your Local Machine</h2>
-    <pre><code>git clone https://github.com/YourUsername/YourRepository.git
-cd YourRepository</code></pre>
-
-    <h2>3. Create a New Feature Branch</h2>
-    <pre><code>git checkout -b feature-name</code></pre>
-
-    <h2>4. Make Changes and Commit</h2>
-    <pre><code>git add .
-git commit -m "Description of changes"</code></pre>
-
-    <h2>5. Switch to Main/Master Branch</h2>
-    <pre><code>git checkout main  # or 'master' if your branch is named 'master'</code></pre>
-
-    <h2>6. Pull Latest Changes from Remote Main/Master</h2>
-    <pre><code>git pull origin main  # or 'master' if your branch is named 'master'</code></pre>
-
-    <h2>7. Merge Feature Branch into Main/Master</h2>
-    <pre><code>git merge feature-name</code></pre>
-
-    <h2>8. Push Updated Main/Master Branch to Remote</h2>
-    <pre><code>git push origin main  # or 'master' if your branch is named 'master'</code></pre>
-
-    <h2>9. Delete the Feature Branch (optional)</h2>
-    <pre><code>git branch -d feature-name</code></pre>
+        <section id="general-info">
+            <h2>General Information</h2>
+            <p>In this guide, you will learn the basic commands and workflows for using GitHub. This includes creating repositories, managing branches, and collaborating with others. Each section of this guide will provide detailed instructions and examples to help you get started.</p>
+        </section>
+    </main>
 </body>
 </html>
